@@ -1,0 +1,1298 @@
+/* ==================================================
+   RESET
+================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fffaf5;
+    color: #222;
+}
+
+
+/* ==================================================
+   HEADER
+================================================== */
+
+header {
+    background: #ffffff;
+    padding: 15px 7%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    box-shadow: 0 2px 10px #00000015;
+}
+
+
+/* Logo */
+
+.logo img {
+    width: 80px;
+    height: 80px;
+
+    object-fit: contain;
+    display: block;
+}
+
+
+/* Navigation */
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #222;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #e63946;
+}
+
+
+/* Cart Button */
+
+nav button {
+    background: #e63946;
+    color: white;
+
+    border: none;
+
+    padding: 10px 15px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-size: 15px;
+
+    transition: 0.3s;
+}
+
+nav button:hover {
+    background: #c92f3b;
+}
+
+
+/* ==================================================
+   HERO
+================================================== */
+
+.hero {
+    min-height: 600px;
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 50px;
+
+    padding: 60px 10%;
+
+    background: #ffe8d6;
+}
+
+
+/* Hero Text */
+
+.hero-text {
+    max-width: 550px;
+}
+
+.hero h1 {
+    font-size: 55px;
+
+    line-height: 1.1;
+
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+
+    line-height: 1.6;
+
+    margin-bottom: 30px;
+}
+
+
+/* Order Button */
+
+.main-btn {
+    display: inline-block;
+
+    background: #e63946;
+
+    color: white;
+
+    padding: 15px 30px;
+
+    border-radius: 10px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.main-btn:hover {
+    background: #c92f3b;
+
+    transform: translateY(-2px);
+}
+
+
+/* ==================================================
+   HERO SLIDER
+================================================== */
+
+.hero-image {
+    width: 450px;
+    height: 350px;
+
+    overflow: hidden;
+
+    border-radius: 15px;
+
+    flex-shrink: 0;
+
+    box-shadow: 0 8px 25px #00000020;
+}
+
+.hero-slider {
+    display: flex;
+
+    width: 400%;
+    height: 100%;
+
+    transition: transform 1s ease;
+}
+
+.hero-slider img {
+    width: 25%;
+    height: 100%;
+
+    object-fit: cover;
+
+    flex-shrink: 0;
+
+    display: block;
+}
+
+
+/* ==================================================
+   SECTIONS
+================================================== */
+
+section {
+    padding: 80px 8%;
+}
+
+section h2 {
+    text-align: center;
+
+    font-size: 40px;
+
+    margin-bottom: 10px;
+}
+
+.section-text {
+    text-align: center;
+
+    margin-bottom: 40px;
+
+    color: #555;
+
+    line-height: 1.6;
+}
+
+
+/* ==================================================
+   MENU
+================================================== */
+
+.menu-container {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+/* Food Card */
+
+.food-card {
+    background: white;
+
+    padding: 20px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 20px #00000012;
+
+    transition: 0.3s;
+}
+
+.food-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 10px 25px #00000018;
+}
+
+
+/* Food Image */
+
+.food-image {
+    width: 100%;
+    height: 180px;
+
+    background: #ffe8d6;
+
+    border-radius: 12px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+
+    margin-bottom: 20px;
+}
+
+.food-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    border-radius: 12px;
+
+    display: block;
+}
+
+
+/* Food Title */
+
+.food-card h3 {
+    font-size: 23px;
+
+    margin-bottom: 10px;
+}
+
+
+/* Food Description */
+
+.food-card p {
+    color: #666;
+
+    line-height: 1.5;
+
+    margin-bottom: 20px;
+}
+
+
+/* Food Bottom */
+
+.food-bottom {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 10px;
+}
+
+
+/* Price */
+
+.food-bottom span {
+    font-size: 20px;
+
+    font-weight: bold;
+}
+
+
+/* Add Button */
+
+.food-bottom button {
+    background: #e63946;
+
+    color: white;
+
+    border: none;
+
+    padding: 10px 18px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.food-bottom button:hover {
+    background: #c92f3b;
+}
+
+
+/* ==================================================
+   ABOUT
+================================================== */
+
+.about {
+    background: #ffe8d6;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 50px;
+}
+
+.about div:first-child {
+    max-width: 600px;
+}
+
+.about h2 {
+    text-align: left;
+}
+
+.about p {
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    margin-top: 15px;
+}
+
+
+/* About Image */
+
+.about-icon {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.about-icon img {
+    width: 550px;
+    height: 550px;
+
+    object-fit: cover;
+
+    border-radius: 13px;
+
+    display: block;
+
+    box-shadow: 0 8px 25px #00000015;
+}
+
+
+/* ==================================================
+   CONTACT
+================================================== */
+
+.contact-container {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 30px;
+
+    margin-top: 40px;
+
+    flex-wrap: wrap;
+}
+
+.contact-container div {
+    background: white;
+
+    padding: 25px 35px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 5px 20px #00000010;
+}
+
+
+/* ==================================================
+   CART
+================================================== */
+
+.cart {
+    display: none;
+
+    position: fixed;
+
+    inset: 0;
+
+    background: #00000080;
+
+    z-index: 2000;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+
+/* Cart Box */
+
+.cart-box {
+    background: white;
+
+    width: 90%;
+
+    max-width: 500px;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    position: relative;
+
+    max-height: 90vh;
+
+    overflow-y: auto;
+}
+
+
+/* Close Button */
+
+.close {
+    position: absolute;
+
+    right: 20px;
+    top: 20px;
+
+    border: none;
+
+    background: none;
+
+    font-size: 20px;
+
+    cursor: pointer;
+}
+
+
+/* Cart Title */
+
+.cart-box h2 {
+    margin-bottom: 25px;
+
+    text-align: center;
+}
+
+
+/* Cart Item */
+
+.cart-item {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 15px 0;
+
+    border-bottom: 1px solid #ddd;
+}
+
+
+/* Remove Button */
+
+.cart-item button {
+    border: none;
+
+    background: #e63946;
+
+    color: white;
+
+    padding: 5px 10px;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+.cart-item button:hover {
+    background: #c92f3b;
+}
+
+
+/* Checkout Button */
+
+.order-btn {
+    width: 100%;
+
+    padding: 15px;
+
+    margin-top: 20px;
+
+    background: #25d366;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 8px;
+
+    font-size: 17px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.order-btn:hover {
+    background: #20b958;
+}
+
+
+/* ==================================================
+   CHECKOUT PAGE
+================================================== */
+
+.checkout {
+    min-height: calc(100vh - 110px);
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 60px 20px;
+
+    background: #fffaf5;
+}
+
+
+.checkout-box {
+    width: 100%;
+
+    max-width: 650px;
+
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 10px 35px #00000015;
+}
+
+
+.checkout-box h1 {
+    text-align: center;
+
+    font-size: 35px;
+
+    margin-bottom: 10px;
+}
+
+
+.checkout-box > p {
+    text-align: center;
+
+    color: #666;
+
+    margin-bottom: 30px;
+
+    line-height: 1.6;
+}
+
+
+/* Form */
+
+#checkout-form {
+    width: 100%;
+}
+
+
+/* Labels */
+
+#checkout-form label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    margin-top: 18px;
+
+    font-weight: bold;
+}
+
+
+/* Inputs */
+
+#checkout-form input,
+#checkout-form textarea {
+    width: 100%;
+
+    padding: 13px 15px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    font-family: Arial, sans-serif;
+
+    outline: none;
+
+    background: #fff;
+
+    transition: 0.3s;
+}
+
+
+/* Input Focus */
+
+#checkout-form input:focus,
+#checkout-form textarea:focus {
+    border-color: #e63946;
+
+    box-shadow: 0 0 0 3px #e6394615;
+}
+
+
+/* Textarea */
+
+#checkout-form textarea {
+    min-height: 120px;
+
+    resize: vertical;
+}
+
+
+/* Your Order Title */
+
+#checkout-form h2 {
+    text-align: left;
+
+    font-size: 25px;
+
+    margin-top: 35px;
+
+    margin-bottom: 15px;
+
+    border-bottom: 2px solid #ffe8d6;
+
+    padding-bottom: 10px;
+}
+
+
+/* Checkout Items */
+
+#checkout-items {
+    background: #fffaf5;
+
+    border-radius: 10px;
+
+    padding: 5px 15px;
+}
+
+
+/* Checkout Item */
+
+#checkout-items .cart-item {
+    padding: 15px 0;
+
+    border-bottom: 1px solid #ddd;
+}
+
+
+/* Last Item */
+
+#checkout-items .cart-item:last-child {
+    border-bottom: none;
+}
+
+
+/* Total */
+
+.checkout-total {
+    text-align: right;
+
+    font-size: 22px;
+
+    margin-top: 20px;
+
+    padding-top: 15px;
+
+    border-top: 2px solid #eee;
+}
+
+
+#checkout-total {
+    color: #e63946;
+
+    font-size: 25px;
+}
+
+
+/* Confirm Order Button */
+
+.checkout .order-btn {
+    background: #25d366;
+
+    font-weight: bold;
+}
+
+.checkout .order-btn:hover {
+    background: #20b958;
+}
+
+
+/* ==================================================
+   FOOTER
+================================================== */
+
+footer {
+    background: #222;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+}
+
+
+/* ==================================================
+   TABLET
+================================================== */
+
+@media (max-width: 1000px) {
+
+    .hero {
+        padding: 50px 6%;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+    .hero-image {
+        width: 400px;
+
+        height: 320px;
+    }
+
+    .about-icon img {
+        width: 450px;
+
+        height: 450px;
+    }
+
+    .menu-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* ==================================================
+   MOBILE
+================================================== */
+
+@media (max-width: 800px) {
+
+    /* Header */
+
+    header {
+        flex-direction: column;
+
+        gap: 15px;
+
+        padding: 12px 5%;
+    }
+
+    nav {
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 12px;
+    }
+
+
+    /* Hero */
+
+    .hero {
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 50px 6%;
+    }
+
+    .hero-text {
+        max-width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+
+    /* Slider */
+
+    .hero-image {
+        width: 100%;
+
+        max-width: 450px;
+
+        height: 300px;
+    }
+
+
+    /* Menu */
+
+    .menu-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* About */
+
+    .about {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    .about div:first-child {
+        max-width: 100%;
+    }
+
+    .about h2 {
+        text-align: center;
+    }
+
+    .about-icon img {
+        width: 100%;
+
+        max-width: 400px;
+
+        height: 400px;
+    }
+
+
+    /* Checkout */
+
+    .checkout {
+        padding: 40px 15px;
+    }
+
+    .checkout-box {
+        padding: 30px 20px;
+    }
+}
+
+
+/* ==================================================
+   SMALL MOBILE
+================================================== */
+
+@media (max-width: 500px) {
+
+    /* Sections */
+
+    section {
+        padding: 60px 5%;
+    }
+
+    section h2 {
+        font-size: 32px;
+    }
+
+
+    /* Logo */
+
+    .logo img {
+        width: 65px;
+
+        height: 65px;
+    }
+
+
+    /* Navigation */
+
+    nav {
+        gap: 8px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    nav button {
+        padding: 8px 12px;
+
+        font-size: 14px;
+    }
+
+
+    /* Hero */
+
+    .hero {
+        padding: 40px 5%;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .hero p {
+        font-size: 17px;
+    }
+
+
+    /* Slider */
+
+    .hero-image {
+        width: 100%;
+
+        height: 250px;
+    }
+
+
+    /* Food */
+
+    .food-card {
+        padding: 15px;
+    }
+
+    .food-image {
+        height: 200px;
+    }
+
+    .food-card h3 {
+        font-size: 21px;
+    }
+
+
+    /* About */
+
+    .about-icon img {
+        height: 300px;
+    }
+
+
+    /* Contact */
+
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-container div {
+        text-align: center;
+
+        width: 100%;
+    }
+
+
+    /* Cart */
+
+    .cart-box {
+        width: 95%;
+
+        padding: 25px 20px;
+    }
+
+    .cart-item {
+        font-size: 14px;
+    }
+
+
+    /* Checkout */
+
+    .checkout {
+        padding: 30px 10px;
+    }
+
+    .checkout-box {
+        padding: 25px 15px;
+
+        border-radius: 15px;
+    }
+
+    .checkout-box h1 {
+        font-size: 28px;
+    }
+
+    .checkout-box > p {
+        font-size: 14px;
+    }
+
+    #checkout-form input,
+    #checkout-form textarea {
+        font-size: 15px;
+    }
+
+    .checkout-total {
+        font-size: 19px;
+    }
+
+    #checkout-total {
+        font-size: 22px;
+    }
+}
+/* ==================================================
+   LOGIN PAGE
+================================================== */
+
+.login-section {
+    min-height: calc(100vh - 120px);
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 60px 20px;
+
+    background: #fffaf5;
+}
+
+
+.login-box {
+    width: 100%;
+
+    max-width: 450px;
+
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 10px 35px #00000015;
+}
+
+
+.login-box h1 {
+    text-align: center;
+
+    font-size: 35px;
+
+    margin-bottom: 10px;
+}
+
+
+.login-text {
+    text-align: center;
+
+    color: #666;
+
+    margin-bottom: 30px;
+}
+
+
+/* Labels */
+
+#login-form label {
+    display: block;
+
+    font-weight: bold;
+
+    margin-bottom: 8px;
+
+    margin-top: 18px;
+}
+
+
+/* Inputs */
+
+#login-form input[type="email"],
+#login-form input[type="password"] {
+    width: 100%;
+
+    padding: 13px 15px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    outline: none;
+
+    transition: 0.3s;
+}
+
+
+#login-form input[type="email"]:focus,
+#login-form input[type="password"]:focus {
+    border-color: #e63946;
+
+    box-shadow: 0 0 0 3px #e6394615;
+}
+
+
+/* Remember */
+
+.remember {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-top: 18px;
+
+    font-size: 14px;
+}
+
+
+.remember label {
+    display: flex !important;
+
+    align-items: center;
+
+    gap: 6px;
+
+    margin: 0 !important;
+
+    font-weight: normal !important;
+}
+
+
+.remember input {
+    width: auto;
+}
+
+
+.remember a {
+    color: #e63946;
+
+    text-decoration: none;
+}
+
+
+.remember a:hover {
+    text-decoration: underline;
+}
+
+
+/* Login Button */
+
+.login-btn {
+    width: 100%;
+
+    padding: 14px;
+
+    margin-top: 25px;
+
+    background: #e63946;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 8px;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.login-btn:hover {
+    background: #c92f3b;
+
+    transform: translateY(-2px);
+}
+
+
+/* Register */
+
+.register-text {
+    text-align: center;
+
+    margin-top: 25px;
+
+    color: #666;
+}
+
+
+.register-text a {
+    color: #e63946;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+
+.register-text a:hover {
+    text-decoration: underline;
+}
+
+
+/* ==================================================
+   LOGIN MOBILE
+================================================== */
+
+@media (max-width: 500px) {
+
+    .login-section {
+        padding: 40px 15px;
+    }
+
+
+    .login-box {
+        padding: 30px 20px;
+    }
+
+
+    .login-box h1 {
+        font-size: 28px;
+    }
+
+
+    .remember {
+        font-size: 13px;
+    }
+
+}

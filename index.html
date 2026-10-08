@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cairo Bites Restaurant</title>
+
+    <link rel="icon"
+        href="photo/Brown and Black Circle Illustrated Burger Pizza Logo.jpg">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+    <div class="logo">
+
+        <img
+            src="photo/Brown and Black Circle Illustrated Burger Pizza Logo.jpg"
+            alt="Cairo Bites Logo">
+
+    </div>
+
+
+    <nav>
+
+        <a href="#home">Home</a>
+
+        <a href="#menu">Menu</a>
+
+        <a href="#about">About</a>
+
+        <a href="#contact">Contact</a>
+
+        <button onclick="openCart()">
+            🛒 Cart (<span id="cart-count">0</span>)
+        </button>
+<a href="login.html">
+    Login
+</a>
+    </nav>
+
+</header>
+
+
+
+<!-- ================= HOME ================= -->
+
+<section id="home" class="hero">
+
+
+    <div class="hero-text">
+
+        <h1>
+            Delicious Food<br>
+            Made With Love ❤️
+        </h1>
+
+
+        <p>
+            Fresh food, amazing taste and fast delivery
+            right to your door.
+        </p>
+
+
+        <a href="#menu" class="main-btn">
+            Order Now
+        </a>
+
+    </div>
+
+
+
+    <!-- HERO SLIDER -->
+
+    <div class="hero-image">
+
+        <div class="hero-slider">
+
+            <img
+                src="photo/016bd917-fb42-4461-9d4f-40cb34914726.jpg"
+                alt="Food">
+
+            <img
+                src="photo/66d25f28-091e-44d0-8868-fec630ab9539.jpg"
+                alt="Vegetables">
+
+            <img
+                src="photo/b2148c89-8119-42b4-94c5-dbef74deab6d.jpg"
+                alt="Coffee">
+
+            <img
+                src="photo/d9bad732-ebfe-45bf-858b-38d31a3f6579.png"
+                alt="Food">
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= MENU ================= -->
+
+<section id="menu">
+
+    <h2>Our Menu</h2>
+
+    <p class="section-text">
+        Choose your favorite meal
+    </p>
+
+
+    <div class="menu-container">
+
+
+        <!-- BURGER -->
+
+        <div class="food-card">
+
+            <div class="food-image">
+
+                <img
+                    src="https://images.pexels.com/photos/19119966/pexels-photo-19119966.jpeg"
+                    alt="Classic Burger">
+
+            </div>
+
+
+            <h3>
+                Classic Burger
+            </h3>
+
+
+            <p>
+                Beef burger with cheese and fresh vegetables.
+            </p>
+
+
+            <div class="food-bottom">
+
+                <span>
+                    150 EGP
+                </span>
+
+
+                <button onclick="addToCart('Classic Burger', 150)">
+                    Add
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- PIZZA -->
+
+        <div class="food-card">
+
+            <div class="food-image">
+
+                <img
+                    src="https://media.istockphoto.com/id/1494273340/photo/pizza-with-pepperoni-arugula-ketchup-tomatoes-and-cheese-in-a-plate-on-a-white-background.jpg?b=1&s=612x612&w=0&k=20&c=kF0TcNtpkCEZQHrQqz9u1r6_HipIM7OUcWc0Vbmw8Rc="
+                    alt="Margherita Pizza">
+
+            </div>
+
+
+            <h3>
+                Margherita Pizza
+            </h3>
+
+
+            <p>
+                Fresh tomato sauce, mozzarella and basil.
+            </p>
+
+
+            <div class="food-bottom">
+
+                <span>
+                    180 EGP
+                </span>
+
+
+                <button onclick="addToCart('Margherita Pizza', 180)">
+                    Add
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- CHICKEN -->
+
+        <div class="food-card">
+
+            <div class="food-image">
+
+                <img
+                    src="https://images.pexels.com/photos/12118980/pexels-photo-12118980.jpeg"
+                    alt="Fried Chicken">
+
+            </div>
+
+
+            <h3>
+                Fried Chicken
+            </h3>
+
+
+            <p>
+                Crispy fried chicken with special spices.
+            </p>
+
+
+            <div class="food-bottom">
+
+                <span>
+                    200 EGP
+                </span>
+
+
+                <button onclick="addToCart('Fried Chicken', 200)">
+                    Add
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- PASTA -->
+
+        <div class="food-card">
+
+            <div class="food-image">
+
+                <img
+                    src="https://media.istockphoto.com/id/1352855347/photo/italian-seafood-pasta.jpg?b=1&s=612x612&w=0&k=20&c=wGTnZwLOxf6_OxG9YuiNkvAAse-ng8B4B_CqwkbJyHs="
+                    alt="Creamy Pasta">
+
+            </div>
+
+
+            <h3>
+                Creamy Pasta
+            </h3>
+
+
+            <p>
+                Creamy pasta with cheese and herbs.
+            </p>
+
+
+            <div class="food-bottom">
+
+                <span>
+                    160 EGP
+                </span>
+
+
+                <button onclick="addToCart('Creamy Pasta', 160)">
+                    Add
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- FRIES -->
+
+        <div class="food-card">
+
+            <div class="food-image">
+
+                <img
+                    src="https://images.pexels.com/photos/5836999/pexels-photo-5836999.jpeg"
+                    alt="French Fries">
+
+            </div>
+
+
+            <h3>
+                French Fries
+            </h3>
+
+
+            <p>
+                Crispy golden fries with our special sauce.
+            </p>
+
+
+            <div class="food-bottom">
+
+                <span>
+                    70 EGP
+                </span>
+
+
+                <button onclick="addToCart('French Fries', 70)">
+                    Add
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- DRINK -->
+
+        <div class="food-card">
+
+            <div class="food-image">
+
+                <img
+                    src="https://images.pexels.com/photos/8880727/pexels-photo-8880727.jpeg"
+                    alt="Soft Drink">
+
+            </div>
+
+
+            <h3>
+                Soft Drink
+            </h3>
+
+
+            <p>
+                Cold refreshing soft drink.
+            </p>
+
+
+            <div class="food-bottom">
+
+                <span>
+                    50 EGP
+                </span>
+
+
+                <button onclick="addToCart('Soft Drink', 50)">
+                    Add
+                </button>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= ABOUT ================= -->
+
+<section id="about" class="about">
+
+
+    <div>
+
+        <h2>
+            About Cairo Bites
+        </h2>
+
+
+        <p>
+            Cairo Bites is a modern restaurant serving delicious
+            meals made from fresh ingredients.
+        </p>
+
+
+        <p>
+            Our goal is to give you great food and a great
+            experience every time.
+        </p>
+
+    </div>
+
+
+
+    <div class="about-icon">
+
+        <img
+            src="https://media.istockphoto.com/id/1428412216/photo/a-male-chef-pouring-sauce-on-meal.jpg?b=1&s=612x612&w=0&k=20&c=O6f05DPG0yuRLpMxTRX5qTv4T8jZLrYMNT0ZePoYnuQ="
+            alt="About Cairo Bites">
+
+    </div>
+
+
+</section>
+
+
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact">
+
+    <h2>
+        Contact Us
+    </h2>
+
+
+    <div class="contact-container">
+
+
+        <div>
+            📍 Cairo, Egypt
+        </div>
+
+
+        <div>
+            📞 01111537244
+        </div>
+
+
+        <div>
+            📧 info@cairobites.com
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= CART ================= -->
+
+<div id="cart" class="cart">
+
+
+    <div class="cart-box">
+
+
+        <button
+            class="close"
+            onclick="closeCart()">
+
+            ✖
+
+        </button>
+
+
+        <h2>
+            Your Cart 🛒
+        </h2>
+
+
+        <div id="cart-items"></div>
+
+
+        <h3>
+
+            Total:
+
+            <span id="total">
+                0
+            </span>
+
+            EGP
+
+        </h3>
+
+
+        <!-- CHECKOUT BUTTON -->
+
+        <button
+            class="order-btn"
+            onclick="goToCheckout()">
+
+            Checkout
+
+        </button>
+
+
+    </div>
+
+</div>
+
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <p>
+        © 2026 Cairo Bites. All Rights Reserved.
+    </p>
+
+</footer>
+
+
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
